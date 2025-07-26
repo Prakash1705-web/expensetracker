@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker-Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="register.js"></script>
+  </head>
+  <body
+    style="
+      background: #833ab4;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+      color: #ffffff;
+      text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+    "
+  >
+    <section class="category">
+      <h1>Expence Tracker</h1>
+      <nav>
+        <ul>
+          <li id="list-1">Home</li>
+          <li class="cat">
+            <select class="category" id="cater">
+              <option value="">Cateogory</option>
+              <option value="food" id="food">Food</option>
+              <option value="grocery" id="grocery">Grocery</option>
+              <option value="transportation" id="transport">
+                Transportation
+              </option>
+              <option value="shopping" id="shop">Shopping</option>
+              <option value="medical" id="medincin">Medical Bills</option>
+            </select>
+          </li>
+          <li class="cat">
+            <select class="category" id="period">
+              <option value="">Period</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </li>
+          <li id="list-2">Setting</li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="form">
+      <h2>Profile</h2>
+      <article class="container">
+        <form action="">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" class="input-field" placeholder="Enter your name" />
+            <label for="email">Email</label>
+            <input type="email" class="input-field" placeholder="Enter your email" />
+            <label for="pwd">Password</label>
+            <input type="password" class="input-field" placeholder="Enter your password"/>
+            <div style="height: 50px;">
+              <label for="gender" value="gender">Gender</label><br />
+              <label for="male" id="male" name="gender" value="gender">Male</label>
+              <input type="radio" name="gender" class="radio" value="gender" />
+              <label for="female" id="female" value="gender">female</label>
+              <input type="radio" name="gender" class="radio" value="gender" /><br><br>
+            </div>
+            <label for="num">Phone Number</label>
+            <input type="text" class="input-field"placeholder="Enter your phone number" />
+            <label for="income">Income</label>
+            <input type="text" class="input-field"placeholder="Enter your income" />
+
+          </div>  
+
+          <button id="register">Register</button>
+          <p id="login">
+            Already have an account ? <a href="login.html">Login here</a>
+          </p>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

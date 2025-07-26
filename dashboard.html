@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      font-size: 15px;
+    }
+    .dash {
+      margin: 0px;
+      height: 556px;
+      display: flex;
+    }
+
+    .user-details {
+      width: 250px;
+      height: auto;
+      background-color: white;
+      color: black;
+      text-shadow: none;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      margin-left: 10px;
+      padding: 10px;
+    }
+
+    .recent {
+      position: relative;
+      left: 5%;
+      width: 959px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #income {
+      width: 300px;
+      height: 200px;
+      background-color: white;
+      color: black;
+      text-shadow: none;
+      border-radius: 20px;
+    }
+    #expence {
+      margin: 0px 10px;
+      width: 300px;
+      height: 200px;
+      background-color: white;
+      color: black;
+      text-shadow: none;
+      border-radius: 20px;
+    }
+
+    #balance {
+      width: 300px;
+      height: 200px;
+      background-color: white;
+      color: black;
+      text-shadow: none;
+      border-radius: 20px;
+    }
+
+    #recent-transaction {
+      width: 920px;
+      height: 340px;
+      background-color: white;
+      color: black;
+      text-shadow: none;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 400px) {
+      .dash {
+        margin-top: 20px;
+        height: 450px;
+      }
+
+      .user-details {
+        display: none;
+        background-color: white;
+        color: black;
+        text-shadow: none;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        margin-left: 10px;
+        padding: 10px;
+      }
+
+      .recent {
+        position: relative;
+        left: 2%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px;
+      }
+
+      #income {
+        width: 103px;
+        height: 100px;
+        background-color: white;
+        color: black;
+        text-shadow: none;
+        border-radius: 20px;
+        margin: 5px;
+      }
+
+      #expence {
+        margin: 5px;
+        width: 103px;
+        height: 100px;
+        background-color: white;
+        color: black;
+        text-shadow: none;
+        border-radius: 20px;
+      }
+
+      #balance {
+        width: 103px;
+        height: 100px;
+        background-color: white;
+        color: black;
+        text-shadow: none;
+        border-radius: 20px;
+        margin: 5px;
+      }
+
+      #recent-transaction {
+        width: 325px;
+        height: 200px;
+        background-color: white;
+        color: black;
+        text-shadow: none;
+        border-radius: 20px;
+        margin-left: 5px;
+      }
+
+      h2 {
+        text-align: start;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 10px;
+      }
+    }
+  </style>
+  <body
+    style="
+      background: #833ab4;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+      color: #ffffff;
+      text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+      margin: 0px;
+    "
+  >
+    <section class="category">
+      <h1>Expence Tracker</h1>
+      <nav>
+        <ul>
+          <li id="list-1">Home</li>
+          <li class="cat">
+            <select class="category" id="cater">
+              <option value="">Cateogory</option>
+              <option value="food" id="food">Food</option>
+              <option value="grocery" id="grocery">Grocery</option>
+              <option value="transportation" id="transport">
+                Transportation
+              </option>
+              <option value="shopping" id="shop">Shopping</option>
+              <option value="medical" id="medincin">Medical Bills</option>
+            </select>
+          </li>
+          <li class="cat">
+            <select class="category" id="period">
+              <option value="">Period</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </li>
+          <li id="list-2">Setting</li>
+          <li id="list-3"><a href="index.html" id="log">Logout</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="dash">
+      <article class="user-details">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+          possimus. Deleniti voluptates voluptatibus sapiente consectetur culpa
+          autem temporibus officiis nulla vel aspernatur sed sint suscipit,
+          repellat recusandae nemo. Dolore, numquam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quia ex aut optio, laboriosam quasi est
+          vero eos dignissimos nemo maiores non incidunt suscipit cum eligendi
+          accusantium ad dolores blanditiis recusandae?Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Itaque atque saepe minima qui,
+          debitis nihil iure rerum labore aut deleniti? Quidem inventore iusto
+          autem nisi possimus eos, amet vero ullam!Lorem Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Illum omnis modi placeat ex
+          repudiandae deserunt soluta quibusdam blanditiis totam assumenda
+          reiciendis, saepe voluptas, deleniti distinctio impedit ad libero,
+          veritatis atque!
+        </p>
+      </article>
+      <article class="recent">
+        <div id="income">
+          <h2>Income</h2>
+        </div>
+
+        <div id="expence">
+          <h2>Expence</h2>
+        </div>
+
+        <div id="balance">
+          <h2>Balance</h2>
+        </div>
+
+        <div id="recent-transaction">
+          <h2>
+            Recent Transaction
+            <a
+              href="addinfo.html"
+              style="
+                text-decoration: none;
+                color: black;
+                position: relative;
+                left: 2%;
+                border: solid;
+                border-radius: 40px;
+                padding: 0px 5px 0px 5px;
+                background-color: black;
+                color: white;
+              "
+              >+</a
+            >
+          </h2>
+          <p style="text-align: center ; margin: 20px;">
+            "The data displayed in the table is dynamically retrieved from the
+            database and rendered on the webpage, allowing users to view
+            real-time expense records that have been previously stored."
+          </p>
+        </div>
+      </article>
+    </section>
+    <script></script>
+  </body>
+</html>

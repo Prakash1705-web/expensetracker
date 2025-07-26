@@ -1,0 +1,545 @@
+/* Nav-bar */
+.category {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 17px;
+  appearance: none;
+  color: #ffffff;
+  text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+  margin-bottom: -5px;
+}
+
+/* Drop-down section */
+.cat {
+  display: inline-flex;
+  margin-top: 10px;
+  padding-right: 25px;
+  font-size: 19px;
+}
+
+/* Heading of the content : "Expence Tracker" */
+h1 {
+  padding-left: 16px;
+}
+
+/* Options used for category */
+#cater {
+  position: relative;
+  right: 10%;
+}
+
+/* unorder list */
+ul li {
+  position: relative;
+  right: 25%;
+}
+
+option {
+  position: relative;
+  right: 50%;
+  cursor: pointer;
+  color: black;
+  text-shadow: none;
+}
+
+/* Options used for category */
+#period {
+  position: relative;
+  right:0%;
+}
+#list-1 {
+  display: inline-flex;
+  font-size: 19px;
+  position: relative;
+  right: 45%;
+}
+
+#list-2 {
+  display: inline-flex;
+  font-size: 19px;
+  position: relative;
+  right: 20%;
+}
+
+#list-3 {
+  display: inline-flex;
+  font-size: 19px;
+  position: relative;
+  right: 10%;
+  text-shadow: none;
+  border-radius: 10px;
+  background-color: red ;
+
+}
+
+#log{
+  padding: 10px;
+  width: 56px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+h3 {
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  padding: 0px;
+}
+
+#quote {
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  width: 600px;
+  font-style: italic;
+
+}
+.btn {
+  background-color: linear-gradient(135deg, #ff6a00, #8e2de2);
+  position: relative;
+  left: 38%;
+  height: 60px;
+  font-size: 24px;
+}
+
+.form {
+  background-color: wheat;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  left: 35%;
+  color: black;
+  text-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.input-field {
+  position: relative;
+  left: 0px;
+  width: 360px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  
+}
+
+#male {
+  position: relative;
+  left: 19%;
+  top: -10px;
+}
+
+#female {
+  position: relative;
+  left: 20%;
+  top: -10px;
+
+}
+
+.radio {
+  width: 20px;
+  position: relative;
+  left: 19%;
+  top: -2px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.container {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+}
+
+table {
+  margin-left: 30px;
+}
+#initial {
+  text-align: start;
+  font-size: 18px;
+}
+
+input {
+  width: 350px;
+  height: 27px;
+  border: non;
+}
+
+input:hover {
+  box-shadow: 0px 2px 9px rgba(0, 2, 4, 1);
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: none;
+  color: white;
+  border-radius: 5px;
+  text-shadow: 0px 4px 6px rgba(0, 2, 4, 3.4);
+  width: 359px;
+  height: 30px;
+  font-size: 17px;
+  position: relative;
+  left: 5px;
+  top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 2px 9px rgba(0, 2, 4, 1);
+}
+
+#login {
+  font-size: 15px;
+  position: relative;
+  top: 0px;
+  text-align: center;
+}
+
+#register {
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+
+#loginbutton {
+  position: relative;
+  left: 9%;
+  width: 350px;
+}
+
+.form-content {
+  background-color: wheat;
+  width: 450px;
+  height: 360px;
+  position: relative;
+  left: 35%;
+  top: 35px;
+  color: black;
+  text-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.userinterface {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left: 29%;
+}
+
+.butn {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  left: -5px;
+  top: -10px;
+}
+
+@media (max-width: 400px){
+  /* Nav-bar */
+.category {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  
+  cursor: pointer;
+  font-size: 13px;
+  appearance: none;
+  color: #ffffff;
+  text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+  margin-bottom: -5px;
+}
+
+/* Drop-down section */
+.cat {
+  display: inline-flex;
+  margin-top: 10px;
+  padding-right: 25px;
+  font-size: 10px;
+  display: none;
+}
+
+/* Heading of the content : "Expence Tracker" */
+h1 {
+  padding-left: 16px;
+  font-size: 14px;
+  width: 220px;
+}
+
+/* Options used for category */
+#cater {
+  position: relative;
+  left: 105%;
+  top: 30px;
+  display: none;
+}
+
+/* unorder list */
+ul li {
+  font-size: 10px;
+  
+}
+
+option {
+  position: relative;
+  right: 50%;
+  cursor: pointer;
+  color: black;
+  text-shadow: none;
+}
+
+/* Options used for category */
+#period {
+  position: relative;
+  left: 274%;
+  top: 35px;
+  z-index: 1;
+  
+}
+#list-1 {
+  display: inline-flex;
+  font-size: 13px;
+  position: relative;
+  left: 48%;
+  display: none;
+}
+
+#list-2 {
+  display: inline-flex;
+  font-size: 13px;
+  position: relative;
+  left: 6%;
+  top: 65px;
+  z-index: 1;
+  display: none;
+}
+
+#list-3 {
+  display: inline-flex;
+  font-size: 14px;
+  display: none;
+  width: 65px;
+  position: relative;
+  left: 2%;
+  top: 80px;
+  z-index: 1;
+  text-shadow: none;
+  border-radius: 10px;
+  background-color: red ;
+
+}
+
+#log{
+  padding: 10px;
+  width: 56px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+h3 {
+  font-size: 34px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  padding: 0px;
+  position: relative;
+  left: -80px;
+  top: 87px;
+  text-align:center;
+  width:300px ;
+}
+
+#quote {
+  font-size: 15px;
+  position: relative;
+  top:90px;
+  left: -13%;
+  width: 300px;
+  font-style: italic;
+
+}
+.btn {
+  background-color: linear-gradient(135deg, #ff6a00, #8e2de2);
+  position: relative;
+  left: 38%;
+  height: 60px;
+  font-size: 24px;
+}
+
+
+
+.form {
+  background-color: wheat;
+  width: 310px;
+  height: 500px;
+  position: relative;
+  left: 2%;
+  top: 30px;
+  color: black;
+  text-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+  display: flex;
+
+flex-wrap: wrap;
+}
+
+.input-field {
+  position: relative;
+  left: 0px;
+  width: 260px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+
+  
+}
+
+.recent {
+  width: 100px;
+  height: 90px;
+  font-size: 10px;
+  margin: 0px;
+} 
+
+
+#male {
+  position: relative;
+  left: 19%;
+  top: -10px;
+}
+
+#female {
+  position: relative;
+  left: 20%;
+  top: -10px;
+
+}
+
+.radio {
+  width: 20px;
+  position: relative;
+  left: 19%;
+  top: -2px;
+  border: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.container {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+}
+
+table {
+  margin-left: 30px;
+}
+#initial {
+  text-align: start;
+  font-size: 18px;
+}
+
+input {
+  width: 350px;
+  height: 27px;
+  border: non;
+}
+
+input:hover {
+  box-shadow: 0px 2px 9px rgba(0, 2, 4, 1);
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: none;
+  color: white;
+  border-radius: 5px;
+  text-shadow: 0px 4px 6px rgba(0, 2, 4, 3.4);
+  width: 359px;
+  height: 30px;
+  font-size: 17px;
+  position: relative;
+  left: 5px;
+  top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 2px 9px rgba(0, 2, 4, 1);
+}
+
+#login {
+  font-size: 13px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+#register {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  width: 263px;
+}
+
+#loginbutton {
+  position: relative;
+  left: 9%;
+  width: 350px;
+}
+
+.form-content {
+  background-color: wheat;
+  width: 450px;
+  height: 360px;
+  position: relative;
+  left: 35%;
+  top: 35px;
+  color: black;
+  text-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.userinterface {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left: 29%;
+}
+
+.butn {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  left: -37%;
+  top: 100px;
+}
+
+}

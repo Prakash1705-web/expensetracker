@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="addexpense.js"></script>
+  </head>
+  <style>
+    #add-expense {
+      width: 160px;
+      height: 35px;
+      position: relative;
+      top: 0px;
+      background: green;
+    }
+
+    .add-info {
+      background-color: white;
+      height: 545px;
+      color: black;
+      padding: 5px;
+      margin-bottom: 0px;
+      text-shadow: none;
+    }
+
+    .user-input {
+      color: black;
+      text-shadow: none;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+
+    #amt {
+      width: 220px;
+    }
+
+    #date {
+      width: 170px;
+    }
+
+    #note {
+      width: 200px;
+    }
+
+    @media (max-width: 400px) {
+      #add-expense {
+        width: 160px;
+        height: 35px;
+        position: relative;
+        top: 360px;
+        left: -120px;
+        background: green;
+      }
+
+      .add-info {
+        background-color: white;
+        height: 800px;
+        width: 350px;
+        color: black;
+        padding-top: 5px;
+        position: relative;
+        top: 5px;
+        margin-bottom: 0px;
+        text-shadow: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .user-input {
+        color: black;
+        text-shadow: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-bottom: 5px;
+        position: relative;
+      }
+
+      nav ul {
+        width: 0px;
+      }
+
+      #amtt {
+        width: 200px;
+        position: relative;
+        right: 150px;
+        top: 80px;
+      }
+
+      .amnt {
+        position: relative;
+        top: 90px;
+        right: 100px;
+      }
+
+      #date {
+        width: 200px;
+        position: relative;
+        right: 120px;
+        top: 170px;
+      }
+
+      .datee {
+        width: 200px;
+        position: relative;
+        right: 165px;
+        top: 195px;
+      }
+
+      #user-cat {
+        position: relative;
+        left: 90px;
+        top: 30px;
+        height: 40px;
+        width: 200px;
+      }
+
+      #note {
+        width: 200px;
+        position: relative;
+        right: 125px;
+        top: 250px;
+      }
+
+      #expense-table {
+        font-size: 10px;
+        min-width: 400px;
+        width: 300px;
+        margin-left: 0px;
+        position: relative;
+        top: 400px;
+        
+        
+      }
+
+      .expense-table th,
+      .expense-table td {
+        padding: 6px;
+        font-size: 8px;
+        
+      }
+
+      th {
+        font-size: 10px;
+        margin-left: 0px;
+        
+      }
+      
+      td {
+        width: 100px;
+      }
+      .noote {
+        width: 150px;
+        position: relative;
+        right: 170px;
+        top: 275px;
+      }
+
+      .zero {
+        width: 0px;
+        position: relative;
+      }
+    }
+  </style>
+  <body
+    style="
+      background: #833ab4;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+      color: #ffffff;
+      text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+
+      margin: 0px;
+    "
+  >
+    <section class="category">
+      <h1>Expense Tracker</h1>
+      <nav>
+        <ul>
+          <li id="list-1">Home</li>
+          <li class="cat">
+            <select class="category" id="cater">
+              <option value="">Cateogory</option>
+              <option value="food" id="food">Food</option>
+              <option value="grocery" id="grocery">Grocery</option>
+              <option value="transportation" id="transport">
+                Transportation
+              </option>
+              <option value="shopping" id="shop">Shopping</option>
+              <option value="medical" id="medincin">Medical Bills</option>
+            </select>
+          </li>
+          <li class="cat">
+            <select class="category" id="period">
+              <option value="">Period</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </li>
+          <li id="list-2">Setting</li>
+          <li id="list-3"><a href="index.html" id="log">Logout</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="add-info">
+      <h2>Expense Tracker</h2>
+      <div class="user-input">
+        <select name="user-category" id="user-cat">
+          <option disabled selected value="">Category</option>
+          <option value="food">Food</option>
+          <option value="grocery">Grocery</option>
+          <option value="transportation">Transportation</option>
+          <option value="medical">Medical</option>
+        </select>
+        <div class="zero">
+          <label for="amount" id="amtt">Amount</label>
+          <input
+            type="text"
+            class="amnt"
+            id="amt"
+            placeholder="Enter amount (for example: 150)"
+          />
+        </div>
+        <div class="zero">
+          <label for="date" class="datee">Date</label>
+          <input type="date" id="date" />
+        </div>
+
+        <div class="zero">
+          <label for="note" class="noote">Note</label>
+          <input type="note" id="note" placeholder="Enter notes" />
+        </div>
+
+        <div>
+          <button onclick="addexpense()" id="add-expense">Add Expense</button>
+        </div>
+      </div>
+      <div id="transaction">
+        <!-- <ul>
+             <li> -- transaction information -- </li> 
+          </ul> -->
+      </div>
+    </section>
+  </body>
+</html>

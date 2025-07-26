@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="
+      background: #833ab4;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+      color: #ffffff;
+      text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+    "
+  >
+    <section class="category">
+      <h1>Expence Tracker</h1>
+      <nav>
+        <ul>
+          <li id="list-1">Home</li>
+          <li class="cat">
+            <select class="category" id="cater">
+              <option value="">Cateogory</option>
+              <option value="food" id="food">Food</option>
+              <option value="grocery" id="grocery">Grocery</option>
+              <option value="transportation" id="transport">Transportation</option>
+              <option value="shopping" id="shop">Shopping</option>
+              <option value="medical" id="medincin">Medical Bills</option>
+            </select>
+          </li>
+          <li class="cat">
+            <select class="category" id="period">
+              <option value="">Period</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </li>
+          <li id="list-2">Setting</li>
+        </ul>
+      </nav>
+      
+    </section>
+
+    
+    
+    <section class="form-content">
+      <h2>Login</h2>
+      <article class="container">
+        <form action="">
+          <table>
+            
+            <tr>
+              <td><br><label for="email" id="initial">Email</label></td>
+            </tr>
+            <tr>
+              <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+              <td><br><label for="password" id="initial">Password</label></td>
+            </tr>
+            <tr>
+              <td><input type="password" id="pwd" placeholder="Enter your password"></td>
+            </tr>
+            <tr style="position: relative; left: 70%; font-size: 15px;">
+              <td><a href="">forget password</a></td>
+            </tr>
+          </table>
+          <button id="loginbutton">Login</button>
+          <p id="register">Don't have an account ? <a href="register.html">Register here</a></p>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

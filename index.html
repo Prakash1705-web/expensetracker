@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body
+    style="
+      background: #833ab4;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+      color: #ffffff;
+      background-position: fixed;
+      background-size: cover;
+      text-shadow: 1px 2px 4px rgba(0, 2, 4, 3.4);
+    "
+  >
+    <section class="category">
+      <h1>Expence Tracker</h1>
+      <nav>
+        <ul>
+          <li id="list-1">Home</li>
+          <li class="cat">
+            <select class="category" id="cater">
+              <option value="">Cateogory</option>
+              <option value="food" id="food">Food</option>
+              <option value="grocery" id="grocery">Grocery</option>
+              <option value="transportation" id="transport">
+                Transportation
+              </option>
+              <option value="shopping" id="shop">Shopping</option>
+              <option value="medical" id="medincin">Medical Bills</option>
+            </select>
+          </li>
+          <li class="cat">
+            <select class="category" id="period">
+              <option value="">Period</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </li>
+          <li id="list-2">Setting</li>
+         
+        </ul>
+      </nav>
+    </section>
+    <section class="userinterface">
+      <h3>
+        Welcome <br />to <br />
+        Expence Tracker
+      </h3>
+      <p id="quote">Budgeting isn’t about restriction, it’s about direction.</p>
+      <button class="butn">Register / login</button>
+    </section>
+  </body>
+</html>
